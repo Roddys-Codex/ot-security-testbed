@@ -356,6 +356,7 @@ services:
       - SIAB_SSL=false
       - SIAB_PKGS=git zsh
       - SIAB_SUDO=false
+      - SIAB_ADDUSER=false
     expose:
       - "4200"
     networks:

@@ -222,11 +222,13 @@ RUN apt-get update \
      cmake             \
      git               \
      libmbedtls-dev    \
- && git clone https://github.com/vembacher/OpenPLC_v3 -b feature/opc-ua-server-support  \
+     python3.11-venv \
+ && git clone https://github.com/Roddys-Codex/OpenPLC_v3.git -b feature/opc-ua-server-support-venv  \
  && cd OpenPLC_v3 \
  && mkdir --parents /workdir/OpenPLC_v3/etc/st_files/ \
  && mv /workdir/heater.st /workdir/OpenPLC_v3/etc/st_files/blank_program.st \
- && pip3 install -r requirements.txt \
+ && python3 -m venv /opt/.venv \
+ && /opt/.venv/bin/pip3 install -r requirements.txt \
  && ./install.sh docker
 
 WORKDIR /workdir/OpenPLC_v3

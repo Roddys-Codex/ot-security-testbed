@@ -259,18 +259,37 @@ RUN apt-get update && \
 #    cd python-netfilterqueue && \
 #    git checkout 0bb948d2c196f033dbb54aca6bcf24eacb14bf7f && \
 #    pip install .
+RUN apt-get update && \
+    apt-get install -y \
+      build-essential \
+      wget curl \
+      libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev \
+      libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev \
+      liblzma-dev python3-pip git libnetfilter-queue-dev \
+      && \
+    cd /usr/src && \
+    wget https://www.python.org/ftp/python/3.10.14/Python-3.10.14.tgz && \
+    tar xzf Python-3.10.14.tgz && \
+    cd Python-3.10.14 && \
+    ./configure --enable-optimizations && \
+    make -j$(nproc) && \
+    make altinstall && \
+    python3.10 -m ensurepip && \
+    python3.10 -m pip install --upgrade pip
 
 RUN apt-get update && \
     apt-get install --no-install-recommends --no-install-suggests -y \
       build-essential \
-      python3-dev python2-dev python3-pip \
+      python3-dev python2-dev python3-pip python3-venv \
       libnetfilter-queue-dev  \
       git && \
-    pip3 install cython scapy && \
+    python3.10 -m venv /opt/.venv && \
+    /opt/.venv/bin/pip install cython scapy && \
     git clone https://github.com/oremanj/python-netfilterqueue && \
     cd python-netfilterqueue && \
     git checkout afcee0d9bfbe377b4e376ca44d3bf8f3e7b2bcad && \
-    pip install .
+    /opt/.venv/bin/pip install .
+
 #ENV PYENV_ROOT="$HOME/.pyenv"
 #ENV PATH="$PYENV_ROOT/bin:$PATH"
 
@@ -278,7 +297,7 @@ RUN apt-get update && \
 #COPY .ssh/authorized_keys /root/.ssh/authorized_keys
 #COPY .ssh/authorized_keys /etc/ssh/authorized_keys
 #
-##RUN mkdir /root/.ssh && echo $SSH_KEY >> /root/.ssh/authorized_keys
+#RUN mkdir /root/.ssh && echo $SSH_KEY >> /root/.ssh/authorized_keys
 #RUN sed -i "s/.*PasswordAuthentication.*/PasswordAuthentication no/g" /etc/ssh/sshd_config
 #RUN sed -i "s/.*ChallengeResponseAuthentication.*/ChallengeResponseAuthentication no/g" /etc/ssh/sshd_config
 #RUN sed -i "s/.*PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config
@@ -293,22 +312,22 @@ RUN ( \
 	echo '#ListenAddress 0.0.0.0'; \
 	echo '#ListenAddress ::'; \
 	echo 'HostKey /etc/ssh/ssh_host_rsa_key'; \
-	echo 'HostKey /etc/ssh/ssh_host_dsa_key'; \
+	# echo 'HostKey /etc/ssh/ssh_host_dsa_key'; \
 	echo 'HostKey /etc/ssh/ssh_host_ecdsa_key'; \
 	echo 'HostKey /etc/ssh/ssh_host_ed25519_key'; \
 	echo 'PermitRootLogin yes'; \
 	echo 'PasswordAuthentication yes'; \
 	echo 'AuthorizedKeysFile /root/.ssh/authorized_keys'; \
 	echo 'Subsystem sftp /usr/lib/ssh/sftp-server'; \
-  ) > /etc/sshd_config_test_clion \
-  && mkdir /run/sshd
+  ) > /etc/sshd_config_test_clion
+#  && mkdir /run/sshd
 
-#RUN ssh-keygen -A
+RUN ssh-keygen -A
 RUN ssh-keygen -t rsa -b 4096 -f  /etc/ssh/ssh_host_key -N ""
 
 COPY .ssh/authorized_keys /root/.ssh/authorized_keys
 RUN chmod 600 /root/.ssh/authorized_keys
-#COPY .ssh/authorized_keys /etc/ssh/authorized_keys
+COPY .ssh/authorized_keys /etc/ssh/authorized_keys
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D", "-f", "/etc/sshd_config_test_clion"]
