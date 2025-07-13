@@ -317,21 +317,37 @@ def get_discrete_read_callback(sampler: SimulatorMiddleware) -> Callable[[range]
 
 def get_coil_write_callback(sampler: SimulatorMiddleware) -> Callable[[int, Iterable], None]:
     def coil_write_callback(start: int, values: Iterable):
-        write_data = SimulatorWriteData()
+        # 1) Read the current simulator state
+        current = sampler.read_data()
+
+        # 2) Seed with current values
+        write_kwargs = {
+            "heater_on":  current.heater_on,
+            "water_on":   current.water_on,
+            "drain_on":   current.drain_on,
+            "on_button":  current.on_button,
+        }
+
+        # 3) Override fields based on the Modbus write
         for i, val in enumerate(values):
-            if start + i == 1:
-                write_data.heater_on = bool(val)
-            elif start + i == 2:
-                write_data.water_on = bool(val)
-            elif start + i == 3:
-                write_data.drain_on = bool(val)
-            elif start + i == 4:
-                write_data.on_button = bool(val)
+            addr = start + i
+            if addr == HEATER_ON_COIL:
+                write_kwargs["heater_on"] = bool(val)
+            elif addr == WATER_ON_COIL:
+                write_kwargs["water_on"] = bool(val)
+            elif addr == DRAIN_ON_COIL:
+                write_kwargs["drain_on"] = bool(val)
+            elif addr == ON_BUTTON_COIL:
+                write_kwargs["on_button"] = bool(val)
             else:
-                raise ValueError("Invalid Address")
+                raise ValueError(f"Invalid Address: {addr}")
+
+        # 4) Construct the Pydantic model with all fields present
+        write_data = SimulatorWriteData(**write_kwargs)
         sampler.write_data(write_data)
 
     return coil_write_callback
+
 
 
 def coil_validate_callback(addresses: range):
