@@ -244,11 +244,14 @@ class CustomDataBlock(BaseModbusDataBlock):
             raise
 
     def setValues(self, address, values):
-        if not self.write_callback:
-            raise Exception("Cannot write to this table.")
-        if not isinstance(values, list):
-            values = [values]
-        self.write_callback(address, values)
+        print(f"[ModbusServer] WRITE @ {address}: {values}")
+        try:
+            if not self.write_callback:
+                raise Exception("Cannot write to this table.")
+            self.write_callback(address, list(values))
+        except Exception as e:
+            print(f"[ModbusServer] ERROR in setValues @ {address}: {e!r}")
+            raise
 
     def default(self, count, value=False):
         super().default(count, value)
