@@ -207,10 +207,12 @@ FROM python:3.10-slim-buster
 WORKDIR /usr/src/simulator
 COPY ./simulator .
 
-RUN pip3 install -r requirements.txt
+RUN python3 -m venv /opt/.venv \
+    && /opt/.venv/bin/pip install -r requirements.txt
 EXPOSE 5020
 
 WORKDIR /
 COPY ./entrypoint.sh /
-ENTRYPOINT /entrypoint.sh 
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 CMD /entrypoint.sh

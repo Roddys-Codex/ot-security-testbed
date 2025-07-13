@@ -201,3 +201,6 @@
 #    limitations under the License.
 
 FROM sspreitzer/shellinabox:latest
+
+RUN adduser --uid 1001 --gid 1000 --disabled-password --gecos "" attacker && \
+    echo "attacker:attacker" | chpasswd

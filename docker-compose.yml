@@ -317,6 +317,15 @@ services:
       - fuxa_appdata:/usr/src/app/FUXA/server/_appdata
       - ./certificates/ca/ca.crt.der:/root/.config/node-opcua-default-nodejs/PKI/issuers/certs/ca.crt.der
       - ./certificates/ca/ca.crl:/root/.config/node-opcua-default-nodejs/PKI/issuers/crl/ca.crl.pem
+      # Trust the CA
+      - ./certificates/ca/ca.crt.pem:/root/.config/node-opcua-default-nodejs/PKI/trusted/certs/ca.crt.pem
+      - ./certificates/ca/ca.crl.pem:/root/.config/node-opcua-default-nodejs/PKI/trusted/crl/ca.crl.pem
+
+      # Trust the PLC server cert
+      - ./certificates/applications/plc.crt.pem:/root/.config/node-opcua-default-nodejs/PKI/trusted/certs/plc.crt.pem
+
+      # (Optionally) also mount the Industrial-Process cert if FUXA monitors it directly:
+      - ./certificates/applications/industrial-process.crt.pem:/root/.config/node-opcua-default-nodejs/PKI/trusted/certs/industrial-process.crt.pem
     restart: unless-stopped
 
   # attacker
@@ -356,6 +365,7 @@ services:
       - SIAB_SSL=false
       - SIAB_PKGS=git zsh
       - SIAB_SUDO=false
+      - SIAB_ADDUSER=false
     expose:
       - "4200"
     networks:

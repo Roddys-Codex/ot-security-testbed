@@ -205,29 +205,44 @@ FROM debian:stable
 WORKDIR /workdir
 ADD ./PLC-Programs/heater.st /workdir/heater.st
 
-RUN apt-get update \
- && apt-get install -y \
-     build-essential   \
-     pkg-config        \
-     bison             \
-     flex              \
-     autoconf          \
-     automake          \
-     libtool           \
-     make              \
-     git               \
-     python3           \
-     python3-pip       \
-     sqlite3           \
-     cmake             \
-     git               \
-     libmbedtls-dev    \
- && git clone https://github.com/vembacher/OpenPLC_v3 -b feature/opc-ua-server-support  \
- && cd OpenPLC_v3 \
- && mkdir --parents /workdir/OpenPLC_v3/etc/st_files/ \
- && mv /workdir/heater.st /workdir/OpenPLC_v3/etc/st_files/blank_program.st \
- && pip3 install -r requirements.txt \
- && ./install.sh docker
+# Install dependencies
+RUN apt-get update && \
+    apt-get install -y \
+        build-essential \
+        pkg-config \
+        bison \
+        flex \
+        autoconf \
+        automake \
+        libtool \
+        make \
+        git \
+        python3 \
+        python3-pip \
+        sqlite3 \
+        cmake \
+        libmbedtls-dev \
+        python3.11-venv && \
+    git clone https://github.com/Roddys-Codex/OpenPLC_v3.git -b feature/opc-ua-server-support && \
+    cd OpenPLC_v3 && \
+    mkdir -p /workdir/OpenPLC_v3/etc/st_files/ && \
+    mv /workdir/heater.st /workdir/OpenPLC_v3/etc/st_files/blank_program.st && \
+    python3 -m venv /opt/.venv && \
+    /opt/.venv/bin/pip3 install -r requirements.txt && \
+    ./install.sh docker && \
+    cd /tmp && \
+    git clone https://github.com/open62541/open62541.git && \
+    cd open62541 && \
+    git checkout v1.3.5 && \
+    git submodule update --init --recursive && \
+    cmake -DUA_NAMESPACE_ZERO=FULL -DCMAKE_BUILD_TYPE=RelWithDebInfo . && \
+    make && \
+    make install && \
+    cd /workdir/OpenPLC_v3/build && \
+    cmake . && \
+    make
+
+# RUN /opt/.venv/bin/pip install service_identity
 
 WORKDIR /workdir/OpenPLC_v3
 ENTRYPOINT ["/workdir/OpenPLC_v3/start_openplc.sh"]

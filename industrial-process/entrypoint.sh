@@ -202,4 +202,4 @@
 #    limitations under the License.
 
 cd /usr/src/simulator
-python3 main.py
+/opt/.venv/bin/python3 main.py
