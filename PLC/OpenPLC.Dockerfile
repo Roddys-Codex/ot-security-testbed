@@ -242,6 +242,7 @@ RUN apt-get update && \
     cmake . && \
     make
 
+# RUN /opt/.venv/bin/pip install service_identity
 
 WORKDIR /workdir/OpenPLC_v3
 ENTRYPOINT ["/workdir/OpenPLC_v3/start_openplc.sh"]
