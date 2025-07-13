@@ -236,7 +236,12 @@ class CustomDataBlock(BaseModbusDataBlock):
         self.validate_callback = validate_callback
 
     def getValues(self, address, count=1):
-        return self.read_callback(range(address, address + count))
+        print(f"[ModbusServer] READ @ {address} ×{count}")
+        try:
+            return self.read_callback(range(address, address + count))
+        except Exception as e:
+            print(f"[ModbusServer] ERROR in getValues @ {address}: {e!r}")
+            raise
 
     def setValues(self, address, values):
         if not self.write_callback:
