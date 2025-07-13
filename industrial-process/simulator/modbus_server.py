@@ -215,6 +215,11 @@ from server_interface import ServerInterface
 from simulator_middleware import SimulatorMiddleware
 from pydantic_classes import SimulatorWriteData
 
+# OpenPLC → Modbus address mapping
+HEATER_ON_COIL = 1
+WATER_ON_COIL  = 2
+DRAIN_ON_COIL  = 3
+ON_BUTTON_COIL = 4
 
 class CustomDataBlock(BaseModbusDataBlock):
 
