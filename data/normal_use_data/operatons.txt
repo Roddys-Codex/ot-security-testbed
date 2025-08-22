@@ -1,0 +1,20 @@
+Data captures began as system was already running. 
+
+For first 30 seconds (approximately), the system ran with no human input.
+
+The heater was then turned off on the HMI interface.
+
+The user logged out of the OpenPLC web page.
+
+The user logged back in - changed the PLC to a blank program
+then changed it back to the heater.
+
+The user then reran the PLC.
+
+System started up.
+
+User waited for the temperature to rise.
+
+Finally turned the heater off.
+
+Turned the heater back on.

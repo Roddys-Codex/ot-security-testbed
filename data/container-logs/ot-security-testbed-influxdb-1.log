@@ -1,0 +1,104 @@
+2025-08-22T16:22:45.333174559Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:22:45 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 3c4d325c-7f74-11f0-819c-06cd4858edf2 21847
+2025-08-22T16:22:55.312948425Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:22:55 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 4243133f-7f74-11f0-819d-06cd4858edf2 1666
+2025-08-22T16:23:05.313732847Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:23:05 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 48390e41-7f74-11f0-819e-06cd4858edf2 1787
+2025-08-22T16:23:15.314574855Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:23:15 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 4e2f0e17-7f74-11f0-819f-06cd4858edf2 1844
+2025-08-22T16:23:25.315511549Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:23:25 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 5425122e-7f74-11f0-81a0-06cd4858edf2 1895
+2025-08-22T16:23:28.198557220Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:23:28 +0000] "GET /ping HTTP/1.1" 204 0 "-" "KapacitorInfluxDBClient" 55dd435e-7f74-11f0-81a1-06cd4858edf2 38
+2025-08-22T16:23:28.199179655Z ts=2025-08-22T16:23:28.199022Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW DATABASES"
+2025-08-22T16:23:28.199310423Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:23:28 +0000] "POST /query?db=&q=SHOW+DATABASES HTTP/1.1 " 200 118 "-" "KapacitorInfluxDBClient" 55dd558f-7f74-11f0-81a2-06cd4858edf2 455
+2025-08-22T16:23:28.199677743Z ts=2025-08-22T16:23:28.199643Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON _internal"
+2025-08-22T16:23:28.199760119Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:23:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+_internal HTTP/1.1 " 200 153 "-" "KapacitorInfluxDBClient" 55dd717a-7f74-11f0-81a3-06cd4858edf2 213
+2025-08-22T16:23:28.200087102Z ts=2025-08-22T16:23:28.200025Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON telegraf"
+2025-08-22T16:23:28.200172885Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:23:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+telegraf HTTP/1.1 " 200 149 "-" "KapacitorInfluxDBClient" 55dd81d9-7f74-11f0-81a4-06cd4858edf2 205
+2025-08-22T16:23:28.200436527Z ts=2025-08-22T16:23:28.200388Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW SUBSCRIPTIONS"
+2025-08-22T16:23:28.200480230Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:23:28 +0000] "POST /query?db=&q=SHOW+SUBSCRIPTIONS HTTP/1.1 " 200 218 "-" "KapacitorInfluxDBClient" 55dd9057-7f74-11f0-81a5-06cd4858edf2 157
+2025-08-22T16:23:35.315774724Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:23:35 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 5a1b1147-7f74-11f0-81a6-06cd4858edf2 1352
+2025-08-22T16:23:45.317269122Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:23:45 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 6011051f-7f74-11f0-81a7-06cd4858edf2 2385
+2025-08-22T16:23:55.317018676Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:23:55 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 6606f529-7f74-11f0-81a8-06cd4858edf2 1740
+2025-08-22T16:24:05.317278896Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:24:05 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 6bfce87d-7f74-11f0-81a9-06cd4858edf2 1504
+2025-08-22T16:24:15.321082225Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:24:15 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 71f2e7a4-7f74-11f0-81aa-06cd4858edf2 4498
+2025-08-22T16:24:25.324763253Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:24:25 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 77e8ea1a-7f74-11f0-81ab-06cd4858edf2 7378
+2025-08-22T16:24:28.198492643Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:24:28 +0000] "GET /ping HTTP/1.1" 204 0 "-" "KapacitorInfluxDBClient" 79a08807-7f74-11f0-81ac-06cd4858edf2 26
+2025-08-22T16:24:28.198836426Z ts=2025-08-22T16:24:28.198784Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW DATABASES"
+2025-08-22T16:24:28.198998715Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:24:28 +0000] "POST /query?db=&q=SHOW+DATABASES HTTP/1.1 " 200 118 "-" "KapacitorInfluxDBClient" 79a09442-7f74-11f0-81ad-06cd4858edf2 335
+2025-08-22T16:24:28.199455804Z ts=2025-08-22T16:24:28.199419Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON _internal"
+2025-08-22T16:24:28.199523092Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:24:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+_internal HTTP/1.1 " 200 153 "-" "KapacitorInfluxDBClient" 79a0ad70-7f74-11f0-81ae-06cd4858edf2 233
+2025-08-22T16:24:28.199831718Z ts=2025-08-22T16:24:28.199798Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON telegraf"
+2025-08-22T16:24:28.199881833Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:24:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+telegraf HTTP/1.1 " 200 149 "-" "KapacitorInfluxDBClient" 79a0be3d-7f74-11f0-81af-06cd4858edf2 166
+2025-08-22T16:24:28.200091822Z ts=2025-08-22T16:24:28.200051Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW SUBSCRIPTIONS"
+2025-08-22T16:24:28.200343902Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:24:28 +0000] "POST /query?db=&q=SHOW+SUBSCRIPTIONS HTTP/1.1 " 200 218 "-" "KapacitorInfluxDBClient" 79a0ca42-7f74-11f0-81b0-06cd4858edf2 326
+2025-08-22T16:24:35.326958182Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:24:35 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 7ddedc93-7f74-11f0-81b1-06cd4858edf2 9112
+2025-08-22T16:24:45.319607491Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:24:45 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 83d4d737-7f74-11f0-81b2-06cd4858edf2 1157
+2025-08-22T16:24:55.330432136Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:24:55 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 89caddee-7f74-11f0-81b3-06cd4858edf2 10603
+2025-08-22T16:25:05.322188118Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:25:05 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 8fc0cdb1-7f74-11f0-81b4-06cd4858edf2 2331
+2025-08-22T16:25:15.331406256Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:25:15 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 95b6cfd2-7f74-11f0-81b5-06cd4858edf2 10676
+2025-08-22T16:25:25.323257677Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:25:25 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 9bacd90f-7f74-11f0-81b6-06cd4858edf2 1544
+2025-08-22T16:25:28.197022566Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:25:28 +0000] "GET /ping HTTP/1.1" 204 0 "-" "KapacitorInfluxDBClient" 9d63968c-7f74-11f0-81b7-06cd4858edf2 33
+2025-08-22T16:25:28.197403640Z ts=2025-08-22T16:25:28.197314Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW DATABASES"
+2025-08-22T16:25:28.197760247Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:25:28 +0000] "POST /query?db=&q=SHOW+DATABASES HTTP/1.1 " 200 118 "-" "KapacitorInfluxDBClient" 9d63a2c6-7f74-11f0-81b8-06cd4858edf2 528
+2025-08-22T16:25:28.198221062Z ts=2025-08-22T16:25:28.198163Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON _internal"
+2025-08-22T16:25:28.198325310Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:25:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+_internal HTTP/1.1 " 200 153 "-" "KapacitorInfluxDBClient" 9d63c2db-7f74-11f0-81b9-06cd4858edf2 265
+2025-08-22T16:25:28.198582097Z ts=2025-08-22T16:25:28.198544Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON telegraf"
+2025-08-22T16:25:28.198617394Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:25:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+telegraf HTTP/1.1 " 200 149 "-" "KapacitorInfluxDBClient" 9d63d3d7-7f74-11f0-81ba-06cd4858edf2 143
+2025-08-22T16:25:28.198892987Z ts=2025-08-22T16:25:28.198854Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW SUBSCRIPTIONS"
+2025-08-22T16:25:28.199142861Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:25:28 +0000] "POST /query?db=&q=SHOW+SUBSCRIPTIONS HTTP/1.1 " 200 218 "-" "KapacitorInfluxDBClient" 9d63e104-7f74-11f0-81bb-06cd4858edf2 320
+2025-08-22T16:25:35.323593128Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:25:35 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" a1a2c79e-7f74-11f0-81bc-06cd4858edf2 1549
+2025-08-22T16:25:45.324699242Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:25:45 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" a798d054-7f74-11f0-81bd-06cd4858edf2 1625
+2025-08-22T16:25:55.325604879Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:25:55 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" ad8ed611-7f74-11f0-81be-06cd4858edf2 1611
+2025-08-22T16:26:05.326049526Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:26:05 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" b384ce8a-7f74-11f0-81bf-06cd4858edf2 1454
+2025-08-22T16:26:15.326871769Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:26:15 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" b97ace03-7f74-11f0-81c0-06cd4858edf2 1508
+2025-08-22T16:26:25.327607596Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:26:25 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" bf70c748-7f74-11f0-81c1-06cd4858edf2 1588
+2025-08-22T16:26:28.197749724Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:26:28 +0000] "GET /ping HTTP/1.1" 204 0 "-" "KapacitorInfluxDBClient" c126f476-7f74-11f0-81c2-06cd4858edf2 33
+2025-08-22T16:26:28.198244182Z ts=2025-08-22T16:26:28.198119Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW DATABASES"
+2025-08-22T16:26:28.198670160Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:26:28 +0000] "POST /query?db=&q=SHOW+DATABASES HTTP/1.1 " 200 118 "-" "KapacitorInfluxDBClient" c12705d8-7f74-11f0-81c3-06cd4858edf2 667
+2025-08-22T16:26:28.199390185Z ts=2025-08-22T16:26:28.199345Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON _internal"
+2025-08-22T16:26:28.199654767Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:26:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+_internal HTTP/1.1 " 200 153 "-" "KapacitorInfluxDBClient" c12732fe-7f74-11f0-81c4-06cd4858edf2 515
+2025-08-22T16:26:28.200049175Z ts=2025-08-22T16:26:28.199999Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON telegraf"
+2025-08-22T16:26:28.200114148Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:26:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+telegraf HTTP/1.1 " 200 149 "-" "KapacitorInfluxDBClient" c1275206-7f74-11f0-81c5-06cd4858edf2 190
+2025-08-22T16:26:28.200308376Z ts=2025-08-22T16:26:28.200280Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW SUBSCRIPTIONS"
+2025-08-22T16:26:28.200536950Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:26:28 +0000] "POST /query?db=&q=SHOW+SUBSCRIPTIONS HTTP/1.1 " 200 218 "-" "KapacitorInfluxDBClient" c1275f1f-7f74-11f0-81c6-06cd4858edf2 294
+2025-08-22T16:26:35.328250537Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:26:35 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" c566c21d-7f74-11f0-81c7-06cd4858edf2 1625
+2025-08-22T16:26:45.333323726Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:26:45 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" cb5cc489-7f74-11f0-81c8-06cd4858edf2 5760
+2025-08-22T16:26:55.329592480Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:26:55 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" d152c77a-7f74-11f0-81c9-06cd4858edf2 1205
+2025-08-22T16:27:05.344382077Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:27:05 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" d748dd77-7f74-11f0-81ca-06cd4858edf2 14567
+2025-08-22T16:27:15.352249818Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:27:15 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" dd3ea610-7f74-11f0-81cb-06cd4858edf2 23078
+2025-08-22T16:27:25.347481618Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:27:25 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" e334adb7-7f74-11f0-81cc-06cd4858edf2 17287
+2025-08-22T16:27:28.197432686Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:27:28 +0000] "GET /ping HTTP/1.1" 204 0 "-" "KapacitorInfluxDBClient" e4ea2df8-7f74-11f0-81cd-06cd4858edf2 66
+2025-08-22T16:27:28.197868562Z ts=2025-08-22T16:27:28.197749Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW DATABASES"
+2025-08-22T16:27:28.198086094Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:27:28 +0000] "POST /query?db=&q=SHOW+DATABASES HTTP/1.1 " 200 118 "-" "KapacitorInfluxDBClient" e4ea3c8f-7f74-11f0-81ce-06cd4858edf2 472
+2025-08-22T16:27:28.198441507Z ts=2025-08-22T16:27:28.198397Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON _internal"
+2025-08-22T16:27:28.198486863Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:27:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+_internal HTTP/1.1 " 200 153 "-" "KapacitorInfluxDBClient" e4ea5976-7f74-11f0-81cf-06cd4858edf2 176
+2025-08-22T16:27:28.198800738Z ts=2025-08-22T16:27:28.198770Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON telegraf"
+2025-08-22T16:27:28.198847386Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:27:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+telegraf HTTP/1.1 " 200 149 "-" "KapacitorInfluxDBClient" e4ea6733-7f74-11f0-81d0-06cd4858edf2 190
+2025-08-22T16:27:28.199164136Z ts=2025-08-22T16:27:28.199118Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW SUBSCRIPTIONS"
+2025-08-22T16:27:28.199234279Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:27:28 +0000] "POST /query?db=&q=SHOW+SUBSCRIPTIONS HTTP/1.1 " 200 218 "-" "KapacitorInfluxDBClient" e4ea75b0-7f74-11f0-81d1-06cd4858edf2 206
+2025-08-22T16:27:35.332796169Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:27:35 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" e92ab7ad-7f74-11f0-81d2-06cd4858edf2 1626
+2025-08-22T16:27:45.333599218Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:27:45 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" ef20b5ec-7f74-11f0-81d3-06cd4858edf2 1730
+2025-08-22T16:27:55.359864503Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:27:55 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" f51697b6-7f74-11f0-81d4-06cd4858edf2 27910
+2025-08-22T16:28:05.365265378Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:28:05 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" fb0c950f-7f74-11f0-81d5-06cd4858edf2 32551
+2025-08-22T16:28:15.380512334Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:28:15 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 01029f17-7f75-11f0-81d6-06cd4858edf2 46735
+2025-08-22T16:28:25.336192311Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:28:25 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 06f89fe9-7f75-11f0-81d7-06cd4858edf2 1644
+2025-08-22T16:28:28.197505053Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:28:28 +0000] "GET /ping HTTP/1.1" 204 0 "-" "KapacitorInfluxDBClient" 08ad78c6-7f75-11f0-81d8-06cd4858edf2 31
+2025-08-22T16:28:28.197941389Z ts=2025-08-22T16:28:28.197881Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW DATABASES"
+2025-08-22T16:28:28.198231729Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:28:28 +0000] "POST /query?db=&q=SHOW+DATABASES HTTP/1.1 " 200 118 "-" "KapacitorInfluxDBClient" 08ad8a6b-7f75-11f0-81d9-06cd4858edf2 444
+2025-08-22T16:28:28.198625855Z ts=2025-08-22T16:28:28.198586Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON _internal"
+2025-08-22T16:28:28.198725974Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:28:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+_internal HTTP/1.1 " 200 153 "-" "KapacitorInfluxDBClient" 08ada6cc-7f75-11f0-81da-06cd4858edf2 204
+2025-08-22T16:28:28.199019049Z ts=2025-08-22T16:28:28.198976Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON telegraf"
+2025-08-22T16:28:28.199239577Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:28:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+telegraf HTTP/1.1 " 200 149 "-" "KapacitorInfluxDBClient" 08adb7c2-7f75-11f0-81db-06cd4858edf2 304
+2025-08-22T16:28:28.199509838Z ts=2025-08-22T16:28:28.199484Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW SUBSCRIPTIONS"
+2025-08-22T16:28:28.199577186Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:28:28 +0000] "POST /query?db=&q=SHOW+SUBSCRIPTIONS HTTP/1.1 " 200 218 "-" "KapacitorInfluxDBClient" 08adc925-7f75-11f0-81dc-06cd4858edf2 196
+2025-08-22T16:28:35.336246682Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:28:35 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 0cee8cdc-7f75-11f0-81dd-06cd4858edf2 1487
+2025-08-22T16:28:45.336514103Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:28:45 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 12e47201-7f75-11f0-81de-06cd4858edf2 1630
+2025-08-22T16:28:55.336500915Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:28:55 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 18da5486-7f75-11f0-81df-06cd4858edf2 1596
+2025-08-22T16:29:05.337059268Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:29:05 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 1ed05b91-7f75-11f0-81e0-06cd4858edf2 1167
+2025-08-22T16:29:15.345110788Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:29:15 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 24c66bd1-7f75-11f0-81e1-06cd4858edf2 8003
+2025-08-22T16:29:25.338806046Z [httpd] 10.11.0.6 - - [22/Aug/2025:16:29:25 +0000] "POST /write?db=telegraf HTTP/1.1 " 204 0 "-" "Telegraf/1.21.4 Go/1.17.7" 2abc5bdf-7f75-11f0-81e2-06cd4858edf2 1337
+2025-08-22T16:29:28.197030326Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:29:28 +0000] "GET /ping HTTP/1.1" 204 0 "-" "KapacitorInfluxDBClient" 2c70aefc-7f75-11f0-81e3-06cd4858edf2 25
+2025-08-22T16:29:28.197504744Z ts=2025-08-22T16:29:28.197436Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW DATABASES"
+2025-08-22T16:29:28.197668433Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:29:28 +0000] "POST /query?db=&q=SHOW+DATABASES HTTP/1.1 " 200 118 "-" "KapacitorInfluxDBClient" 2c70be28-7f75-11f0-81e4-06cd4858edf2 345
+2025-08-22T16:29:28.197964563Z ts=2025-08-22T16:29:28.197933Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON _internal"
+2025-08-22T16:29:28.198024727Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:29:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+_internal HTTP/1.1 " 200 153 "-" "KapacitorInfluxDBClient" 2c70d391-7f75-11f0-81e5-06cd4858edf2 172
+2025-08-22T16:29:28.198272556Z ts=2025-08-22T16:29:28.198236Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW RETENTION POLICIES ON telegraf"
+2025-08-22T16:29:28.198321368Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:29:28 +0000] "POST /query?db=&q=SHOW+RETENTION+POLICIES+ON+telegraf HTTP/1.1 " 200 149 "-" "KapacitorInfluxDBClient" 2c70e08a-7f75-11f0-81e6-06cd4858edf2 142
+2025-08-22T16:29:28.198579837Z ts=2025-08-22T16:29:28.198550Z lvl=info msg="Executing query" log_id=0yWdgj9l000 service=query query="SHOW SUBSCRIPTIONS"
+2025-08-22T16:29:28.198637155Z [httpd] 10.11.0.2 - - [22/Aug/2025:16:29:28 +0000] "POST /query?db=&q=SHOW+SUBSCRIPTIONS HTTP/1.1 " 200 218 "-" "KapacitorInfluxDBClient" 2c70ed70-7f75-11f0-81e7-06cd4858edf2 127

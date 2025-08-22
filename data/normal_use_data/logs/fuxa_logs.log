@@ -1,0 +1,61 @@
+
+> fuxa-server@1.1.6-747 start
+> node main.js
+
+2025-08-22T14:22:10.296Z [INF] 	FUXA V.1.1.6-747
+2025-08-22T14:22:10.581Z [INF] 	FUXA init in  297ms.
+2025-08-22T14:22:11.488Z [INF] 	'PLC-OPCUA' created
+[33m2025-08-22T14:22:11.490Z [WAR] 	try to create PLC-modbus but plugin is missing![39m
+2025-08-22T14:22:11.491Z [INF] 	'PLC-OPCUA' start
+2025-08-22T14:22:11.492Z [INF] 	FUXA started!
+2025-08-22T14:22:11.494Z [INF] 	WebServer is running http://127.0.0.1:1881/
+2025-08-22T14:22:13.363Z [INF] 	socket.io client connected
+2025-08-22T14:22:14.352Z [INF] 	socket.io client connected
+[0mGET /api/settings [36m304[0m 4.813 ms - -[0m
+[0mGET /api/settings [36m304[0m 1.005 ms - -[0m
+[0mGET /api/settings [36m304[0m 0.655 ms - -[0m
+[0mGET /api/project [32m200[0m 3.700 ms - 88876[0m
+2025-08-22T14:23:03.737Z [INF] 	socket.io client connected
+[0mGET /api/settings [36m304[0m 0.632 ms - -[0m
+[0mGET /api/settings [36m304[0m 0.632 ms - -[0m
+[0mGET /api/project [36m304[0m 1.922 ms - -[0m
+[0mGET /api/settings [36m304[0m 0.983 ms - -[0m
+2025-08-22T14:23:15.038Z [INF] 	socket.io client connected
+[0mPOST /api/projectData [32m200[0m 20.009 ms - -[0m
+[0mPOST /api/projectData [32m200[0m 4.413 ms - -[0m
+[0mPOST /api/projectData [32m200[0m 5.645 ms - -[0m
+[0mGET /api/plugins [32m200[0m 11.030 ms - 560[0m
+2025-08-22T14:23:52.761Z [INF] 	'PLC-OPCUA' stop
+2025-08-22T14:23:52.764Z [INF] 	'PLC-OPCUA' created
+2025-08-22T14:23:52.797Z [INF] 	'PLC-modbus' created
+2025-08-22T14:23:52.797Z [INF] 	'PLC-OPCUA' start
+2025-08-22T14:23:52.798Z [INF] 	'PLC-modbus' start
+[0mPOST /api/plugins [32m200[0m 14787.996 ms - -[0m
+2025-08-22T14:24:05.536Z [INF] 	'PLC-OPCUA' stop
+2025-08-22T14:24:05.536Z [INF] 	'PLC-modbus' stop
+2025-08-22T14:24:05.541Z [INF] 	'PLC-OPCUA' created
+2025-08-22T14:24:05.549Z [INF] 	'PLC-modbus' created
+2025-08-22T14:24:05.550Z [INF] 	'PLC-OPCUA' start
+2025-08-22T14:24:05.550Z [INF] 	'PLC-modbus' start
+2025-08-22T14:24:05.550Z [INF] 	runtime.update-project: restart!
+[0mPOST /api/project [32m200[0m 45.325 ms - -[0m
+[0mGET /api/project [32m200[0m 2.049 ms - 92216[0m
+[0mPOST /api/projectData [32m200[0m 3.495 ms - -[0m
+[0mGET /api/settings [36m304[0m 4.718 ms - -[0m
+[0mGET /api/settings [36m304[0m 0.489 ms - -[0m
+2025-08-22T14:56:58.597Z [INF] 	socket.io client connected
+[0mGET /api/project [32m200[0m 3.338 ms - 88876[0m
+14:57:45.230Z :client_session_impl           :746   [NODE-OPCUA-W21] Pending transactions:  CloseSessionRequest CloseSessionRequest CloseSessionRequest CloseSessionRequest CloseSessionRequest CloseSessionRequest CloseSessionRequest CloseSessionRequest CloseSessionRequest CloseSessionRequest CloseSessionRequest
+14:57:45.231Z :client_session_impl           :747   [NODE-OPCUA-W22] Warning : your opcua client is sending multiple requests simultaneously to the server CloseSessionRequest 
+ ...                                                  please fix your application code
+[33m2025-08-22T14:57:45.233Z [WAR] 	'PLC-OPCUA' Warning => Session closed[39m
+2025-08-22T14:58:37.001Z [INF] 	socket.io client connected
+2025-08-22T14:59:27.356Z [INF] 	socket.io client connected
+2025-08-22T14:59:28.104Z [INF] 	socket.io client connected
+2025-08-22T15:00:31.705Z [INF] 	socket.io client connected
+2025-08-22T15:06:31.392Z [INF] 	socket.io client connected
+2025-08-22T15:06:31.399Z [INF] 	socket.io client connected
+[0mGET /api/settings [36m304[0m 16.277 ms - -[0m
+[0mGET /api/settings [36m304[0m 0.703 ms - -[0m
+2025-08-22T15:12:47.467Z [INF] 	socket.io client connected
+[0mGET /api/project [36m304[0m 6.118 ms - -[0m
