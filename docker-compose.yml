@@ -371,6 +371,7 @@ services:
     networks:
           - net-testbed
     restart: unless-stopped
+    privileged: true
 
 
 networks:
