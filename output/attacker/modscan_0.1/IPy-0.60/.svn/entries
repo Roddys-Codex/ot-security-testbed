@@ -1,0 +1,178 @@
+8
+
+dir
+4
+https://modscan.googlecode.com/svn/trunk/IPy-0.60
+https://modscan.googlecode.com/svn
+
+
+
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+
+svn:special svn:externals svn:needs-lock
+
+test
+dir
+
+setup.app
+dir
+
+AUTHORS
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+cf36f2f3e17ec86ccb4f9f5c05026c1e
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+ChangeLog
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+eee13c7ae57d9965669d94c05e8ecf7e
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+setup.py
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+d8eb25efc71aa8265acb70bba20498a3
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+has-props
+
+IPy.py
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+a2a1e1f4723d0760803771a247c78fd7
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+test_doc.py
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+b2c9bf683322e4608975f4702e5a2cb5
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+has-props
+
+example
+dir
+
+IPy.egg-info
+dir
+
+IPy.pyc
+file
+
+
+
+
+2008-06-10T03:21:30.000000Z
+ea465419449953086e2e70ec2b5f03c8
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+has-props
+
+README
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+e2bc10b98a5308776f977143ad9cdfb3
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+setup.cfg
+file
+
+
+
+
+2008-05-16T09:54:33.000000Z
+d86758afb08a60bc589dc67bfea670b2
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+build
+dir
+
+rest.css
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+72bd6463047647f2e8a6948c1c0efcb7
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+COPYING
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+ebc0028ff5cdaf7796604875027dcd55
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+PKG-INFO
+file
+
+
+
+
+2008-05-16T09:54:33.000000Z
+a184ac81a1a753b864b8a2fec33550c7
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+Makefile
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+04b7cb3ed0e0650ef896a825bc743d54
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+

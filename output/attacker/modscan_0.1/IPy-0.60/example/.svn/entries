@@ -1,0 +1,40 @@
+8
+
+dir
+4
+https://modscan.googlecode.com/svn/trunk/IPy-0.60/example
+https://modscan.googlecode.com/svn
+
+
+
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+
+svn:special svn:externals svn:needs-lock
+
+confbuilder.py
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+da036dc4f8e5de7ad0efd1a2d1a60c34
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+confbuilder
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+022de4a53012771ff408ad71b05b1996
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+

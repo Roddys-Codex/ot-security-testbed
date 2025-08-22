@@ -1,0 +1,15 @@
+{
+  "name": "opcua-enumerator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "OPC UA Phase 1 enumerator for ICS testbed",
+  "main": "enumerate-opcua.mjs",
+  "scripts": {
+    "start": "node enumerate-opcua.mjs"
+  },
+  "dependencies": {
+    "csv-stringify": "^6.5.0",
+    "node-opcua": "^2.156.0",
+    "yargs": "^17.7.2"
+  }
+}

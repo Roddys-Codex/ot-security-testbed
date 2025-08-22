@@ -1,0 +1,1 @@
+{"endpointUrl":"opc.tcp://industrial-process:4840/freeopcua/server/","securityPolicy":"http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256","securityMode":"3","userTokens":[0,2,1]}

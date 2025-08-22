@@ -1,0 +1,7 @@
+11:19:40.469Z :verify                        :49    [NODE-OPCUA-W06] The certificate subjectAltName does not match the client applicationUri
+ ...                                                Please regenerate a specific certificate that matches your client applicationUri
+ ...                                                certificate subjectAltName  = urn:8aaa8c028195:ICS-Testbed-Enumerator
+ ...                                                client applicationUri  = urn:8aaa8c028195:NodeOPCUA-Client
+ ...                                                certificateFile         = /root/.config/node-opcua-default-nodejs/PKI/own/certs/client_certificate.pem
+ ...                                                
+{"endpoint":"plc","nsArray":["http://opcfoundation.org/UA/","urn:open62541.server.application"]}
