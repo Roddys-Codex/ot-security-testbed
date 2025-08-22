@@ -1,0 +1,11 @@
+cd /scripts/opcua-enumerator
+npm i
+
+# Secure-only, TOFU (anonymous)
+node enumerate-opcua.mjs --endpoint opc.tcp://plc:4840
+
+# Or with username/password if your server requires it:
+node enumerate-opcua.mjs --endpoint opc.tcp://plc:4840 --user openplc --pass openplc
+
+# Optional: pin the fingerprint (safer; fails if PLC cert rotates)
+node enumerate-opcua.mjs --endpoint opc.tcp://plc:4840 --pinSha1 "AA:BB:CC:...:ZZ"

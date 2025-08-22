@@ -1,0 +1,64 @@
+8
+
+dir
+4
+https://modscan.googlecode.com/svn/trunk/IPy-0.60/IPy.egg-info
+https://modscan.googlecode.com/svn
+
+
+
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+
+svn:special svn:externals svn:needs-lock
+
+SOURCES.txt
+file
+
+
+
+
+2008-05-16T09:54:33.000000Z
+29a49e597090b36132cfa07c66aa3dff
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+top_level.txt
+file
+
+
+
+
+2008-05-16T09:54:33.000000Z
+0822b923517ac4d5ed1b8b5ad4f2e903
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+PKG-INFO
+file
+
+
+
+
+2008-05-16T09:54:33.000000Z
+a184ac81a1a753b864b8a2fec33550c7
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+dependency_links.txt
+file
+
+
+
+
+2008-05-16T09:54:33.000000Z
+68b329da9893e34099c7d8ad5cb9c940
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+

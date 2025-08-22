@@ -1,0 +1,46 @@
+8
+
+dir
+4
+https://modscan.googlecode.com/svn/trunk/IPy-0.60/setup.app/Contents
+https://modscan.googlecode.com/svn
+
+
+
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+
+svn:special svn:externals svn:needs-lock
+
+MacOS
+dir
+
+Info.plist
+file
+
+
+
+
+2008-06-10T03:20:14.000000Z
+e9dd887c495fd22ada35b1085d19e000
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+Resources
+dir
+
+PkgInfo
+file
+
+
+
+
+2008-06-10T03:20:14.000000Z
+23b7d7d024abb0f558420e098800bf27
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+

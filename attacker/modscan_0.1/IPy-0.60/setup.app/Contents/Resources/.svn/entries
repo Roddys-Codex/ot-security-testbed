@@ -1,0 +1,54 @@
+8
+
+dir
+4
+https://modscan.googlecode.com/svn/trunk/IPy-0.60/setup.app/Contents/Resources
+https://modscan.googlecode.com/svn
+
+
+
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+
+
+svn:special svn:externals svn:needs-lock
+
+PythonApplet.icns
+file
+
+
+
+
+2008-02-05T05:50:41.000000Z
+c6733f19394460930984f6ef00d3bfbb
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+has-props
+
+setup.py
+file
+
+
+
+
+2008-05-16T09:54:05.000000Z
+d8eb25efc71aa8265acb70bba20498a3
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+has-props
+
+__argvemulator_setup.py
+file
+
+
+
+
+2008-06-10T03:20:14.000000Z
+39cb8a11a2d639e62fd161b903d5c852
+2008-08-09T02:24:55.783409Z
+4
+Mark.Bristow
+

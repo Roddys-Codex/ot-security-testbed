@@ -1,0 +1,15 @@
+npm i install
+
+node enumerate-opcua.mjs --autoFixCerts --regenClientCert \
+  --endpoint opc.tcp://plc:4840 \
+  --anonymous
+
+
+# files produced
+ls -lh opcua_tags.json opcua_snapshot.csv
+
+# peek the first few rows
+head -n 5 opcua_snapshot.csv
+
+# filter for key tags to use later (temp/setpoint/heater)
+jq -r '.vars[] | select(.browseName|test("temp|setpoint|heater|enable"; "i")) | "\(.browseName),\(.nodeId),\(.value)"' opcua_tags.json
