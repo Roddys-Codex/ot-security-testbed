@@ -213,7 +213,13 @@ RUN apt-get update && \
     iptables \
     iputils-ping \
     zsh \
-    ssh
+    ssh \
+    netdiscover \
+    tcpdump \
+    iproute2 \
+    nodejs npm \
+    jq
+
 
 # install python3.6 which is required by NetfilterQueue (incompatible with python3.7+)
 #RUN apt-get update && \
@@ -259,6 +265,9 @@ RUN apt-get update && \
 #    cd python-netfilterqueue && \
 #    git checkout 0bb948d2c196f033dbb54aca6bcf24eacb14bf7f && \
 #    pip install .
+
+RUN sudo npm install -g node-opcua
+
 RUN apt-get update && \
     apt-get install -y \
       build-essential \
@@ -290,6 +299,15 @@ RUN apt-get update && \
     git checkout afcee0d9bfbe377b4e376ca44d3bf8f3e7b2bcad && \
     /opt/.venv/bin/pip install .
 
+RUN cd / && \
+    mkdir tools && \
+    cd tools && \
+    git clone https://github.com/sourceperl/mbtget.git && \
+    cd mbtget \
+    perl Makefile.PL \
+    make \
+    make install
+    
 #ENV PYENV_ROOT="$HOME/.pyenv"
 #ENV PATH="$PYENV_ROOT/bin:$PATH"
 

@@ -1,0 +1,72 @@
+{"ts":"2025-08-16T11:07:30.189Z","event":"session","endpoint":"opc.tcp://plc:4840","user":"anonymous"}
+{"ts":"2025-08-16T11:07:30.198Z","event":"target","nodeId":"ns=1;s=heater_on","browseName":"heater_on","dataType":"Variant","cur":false}
+{"ts":"2025-08-16T11:07:57.024Z","event":"session","endpoint":"opc.tcp://plc:4840","user":"anonymous"}
+{"ts":"2025-08-16T11:07:57.033Z","event":"target","nodeId":"ns=1;s=heater_on","browseName":"heater_on","dataType":"Variant","cur":true}
+{"ts":"2025-08-16T11:10:00.729Z","event":"session","endpoint":"opc.tcp://plc:4840","user":"anonymous"}
+{"ts":"2025-08-16T11:10:00.735Z","event":"target","nodeId":"ns=1;s=heater_on","browseName":"heater_on","dataType":"Variant","cur":false}
+{"ts":"2025-08-16T11:15:35.184Z","event":"session","endpoint":"opc.tcp://plc:4840","user":"anonymous"}
+{"ts":"2025-08-16T11:15:35.189Z","event":"boolean_pulse","nodeId":"ns=1;s=heater_on","from":false,"to":true,"pulseMs":1500}
+{"ts":"2025-08-16T11:15:35.191Z","event":"write_error","nodeId":"ns=1;s=heater_on","status":"BadNotWritable (0x803b0000)"}
+{"ts":"2025-08-16T11:19:53.134Z","event":"session","endpoint":"opc.tcp://plc:4840","user":"anonymous"}
+{"ts":"2025-08-16T11:19:53.139Z","event":"boolean_pulse","nodeId":"ns=1;s=heater_on","from":true,"to":false,"pulseMs":1500}
+{"ts":"2025-08-16T11:19:53.141Z","event":"write_error","nodeId":"ns=1;s=heater_on","status":"BadNotWritable (0x803b0000)"}
+{"ts":"2025-08-16T11:28:54.069Z","event":"session","endpoint":"opc.tcp://plc:4840","user":"anonymous"}
+{"t":"2025-08-16T12:19:33.500Z","event":"read","node":"ns=1;s=heater_on","dataType":"Boolean","cur":true,"status":"Good (0x00000000)"}
+{"t":"2025-08-16T12:19:33.505Z","event":"write","node":"ns=1;s=heater_on","new":false,"status":"BadNotWritable (0x803b0000)"}
+{"t":"2025-08-16T12:19:35.008Z","event":"restore","node":"ns=1;s=heater_on","val":true,"status":"BadNotWritable (0x803b0000)"}
+{"event": "connect_start", "endpoint": "opc.tcp://plc:4840", "policy": "Basic256Sha256", "mode": "SignAndEncrypt", "ts": "2025-08-16T13:12:17.335816+00:00"}
+{"event": "connect_start", "endpoint": "opc.tcp://plc:4840", "policy": "Basic256Sha256", "mode": "SignAndEncrypt", "ts": "2025-08-16T13:14:25.477228+00:00"}
+{"t": "2025-08-16T13:21:38.859478Z", "event": "connect", "endpoint": "opc.tcp://plc:4840", "policy": "None", "mode": "None", "identity": "anonymous"}
+{"t": "2025-08-16T13:21:38.863721Z", "event": "session", "created": true}
+{"t": "2025-08-16T13:21:38.864215Z", "event": "inspect", "nodeId": "ns=1;s=heater_on", "variantType": "VariantType.Boolean", "currentValue": false}
+{"t": "2025-08-16T13:21:38.864655Z", "event": "error", "op": "boolean_write", "code": "\"The access level does not allow writing to the Node.\"(BadNotWritable)"}
+{"t": "2025-08-16T13:22:03.879842Z", "event": "error", "op": "opcua", "msg": "Wrong format: `Basic256Sha256,SignAndEncrypt`, expected at least 4 comma-separated values"}
+{"t": "2025-08-16T13:22:28.259420Z", "event": "error", "op": "opcua", "msg": "Wrong format: `Basic256Sha256,SignAndEncrypt`, expected at least 4 comma-separated values"}
+{"t": "2025-08-16T13:25:38.712134Z", "event": "error", "op": "generic", "msg": "error parsing asn1 value: ParseError { kind: UnexpectedTag { actual: Tag { value: 13, constructed: true, class: Universal } } }"}
+{"t": "2025-08-16T13:27:49.576028Z", "event": "error", "op": "generic", "msg": "error parsing asn1 value: ParseError { kind: UnexpectedTag { actual: Tag { value: 13, constructed: true, class: Universal } } }"}
+{"t": "2025-08-16T13:28:11.997988Z", "event": "connect", "endpoint": "opc.tcp://plc:4840", "policy": "None", "mode": "None", "identity": "anonymous"}
+{"t": "2025-08-16T13:28:12.002281Z", "event": "session", "created": true}
+{"t": "2025-08-16T13:28:12.002858Z", "event": "error", "op": "opcua", "msg": "\"The node id refers to a node that does not exist in the server address space.\"(BadNodeIdUnknown)"}
+{"t": "2025-08-16T13:31:10.468404Z", "event": "connect", "endpoint": "opc.tcp://plc:4840", "policy": "None", "mode": "None", "identity": "anonymous"}
+{"t": "2025-08-16T13:31:10.473516Z", "event": "session", "created": true}
+{"t": "2025-08-16T13:31:10.474088Z", "event": "error", "op": "opcua", "msg": "\"The node id refers to a node that does not exist in the server address space.\"(BadNodeIdUnknown)"}
+{"t": "2025-08-16T13:31:27.379415Z", "event": "connect", "endpoint": "opc.tcp://plc:4840", "policy": "None", "mode": "None", "identity": "anonymous"}
+{"t": "2025-08-16T13:31:27.383745Z", "event": "session", "created": true}
+{"t": "2025-08-16T13:31:27.384227Z", "event": "error", "op": "opcua", "msg": "\"The node id refers to a node that does not exist in the server address space.\"(BadNodeIdUnknown)"}
+{"t": "2025-08-16T13:31:37.143806Z", "event": "connect", "endpoint": "opc.tcp://plc:4840", "policy": "None", "mode": "None", "identity": "anonymous"}
+{"t": "2025-08-16T13:31:37.148026Z", "event": "session", "created": true}
+{"t": "2025-08-16T13:31:37.148629Z", "event": "error", "op": "opcua", "msg": "\"The node id refers to a node that does not exist in the server address space.\"(BadNodeIdUnknown)"}
+{"t": "2025-08-16T13:31:57.237476Z", "event": "connect", "endpoint": "opc.tcp://plc:4840", "policy": "None", "mode": "None", "identity": "anonymous"}
+{"t": "2025-08-16T13:31:57.242413Z", "event": "session", "created": true}
+{"t": "2025-08-16T13:31:57.242535Z", "event": "error", "op": "opcua", "msg": "('Error parsing string 1', ValueError('not enough values to unpack (expected 2, got 1)'))"}
+{"t": "2025-08-16T13:32:20.775808Z", "event": "connect", "endpoint": "opc.tcp://plc:4840", "policy": "None", "mode": "None", "identity": "anonymous"}
+{"t": "2025-08-16T13:32:20.780884Z", "event": "session", "created": true}
+{"t": "2025-08-16T13:32:20.781347Z", "event": "error", "op": "opcua", "msg": "\"The node id refers to a node that does not exist in the server address space.\"(BadNodeIdUnknown)"}
+{"t":"2025-08-16T15:40:39.399Z","event":"read","node":"ns=1;s=heater_on","dataType":"Boolean","cur":false,"status":"Good (0x00000000)"}
+{"t":"2025-08-16T15:40:39.404Z","event":"write","node":"ns=1;s=heater_on","new":true,"status":"BadNotWritable (0x803b0000)"}
+{"t":"2025-08-16T15:40:40.909Z","event":"restore","node":"ns=1;s=heater_on","val":false,"status":"BadNotWritable (0x803b0000)"}
+{"t":"2025-08-17T11:34:09.538Z","event":"pcap_start","file":"/captures/opcua_phase3.pcap","filter":"(host industrial-process) and port 4840"}
+{"t":"2025-08-17T11:34:09.539Z","event":"connect_plan","endpoint":"opc.tcp://industrial-process:4840/freeopcua/server/","selectedPolicy":"Basic256Sha256","selectedMode":"SignAndEncrypt","leafSha1":"0A:68:B3:CC:9C:77:E3:29:4D:9E:5D:1D:5E:B7:CF:FD:8D:96:69:3C","user":"anonymous"}
+{"t":"2025-08-17T11:34:51.334Z","event":"pcap_start","file":"/captures/opcua_phase3.pcap","filter":"(host industrial-process) and port 4840"}
+{"t":"2025-08-17T11:34:51.335Z","event":"connect_plan","endpoint":"opc.tcp://industrial-process:4840/freeopcua/server/","selectedPolicy":"Basic256Sha256","selectedMode":"SignAndEncrypt","leafSha1":"0A:68:B3:CC:9C:77:E3:29:4D:9E:5D:1D:5E:B7:CF:FD:8D:96:69:3C","user":"anonymous"}
+{"t":"2025-08-17T11:35:16.088Z","event":"pcap_start","file":"/captures/opcua_phase3.pcap","filter":"(host industrial-process) and port 4840"}
+{"t":"2025-08-17T11:35:16.089Z","event":"connect_plan","endpoint":"opc.tcp://industrial-process:4840/freeopcua/server/","selectedPolicy":"Basic256Sha256","selectedMode":"SignAndEncrypt","leafSha1":"0A:68:B3:CC:9C:77:E3:29:4D:9E:5D:1D:5E:B7:CF:FD:8D:96:69:3C","user":"anonymous"}
+{"t":"2025-08-17T11:36:11.538Z","event":"pcap_start","file":"/captures/opcua_phase3.pcap","filter":"(host plc) and port 4840"}
+{"t":"2025-08-17T11:36:11.539Z","event":"connect_plan","endpoint":"opc.tcp://plc:4840","selectedPolicy":"Basic256Sha256","selectedMode":"SignAndEncrypt","leafSha1":"6E:81:82:BC:56:63:68:19:52:F7:0E:53:B1:6A:3A:03:90:C6:36:BB","user":"user"}
+{"t":"2025-08-17T11:36:11.638Z","event":"inspect","nodeId":"ns=1;s=heater_on","dataType":1,"access":1,"uaccess":1,"currentValue":true}
+{"t":"2025-08-17T11:36:11.641Z","event":"write","nodeId":"ns=1;s=heater_on","attemptedValue":false,"dataType":1,"status":"BadNotWritable"}
+{"t":"2025-08-17T11:36:13.144Z","event":"write","nodeId":"ns=1;s=heater_on","attemptedValue":true,"dataType":1,"status":"BadNotWritable"}
+{"t":"2025-08-17T11:36:13.145Z","event":"done"}
+{"t":"2025-08-17T11:36:13.148Z","event":"pcap_stop"}
+{"t":"2025-08-17T11:39:05.186Z","event":"pcap_start","file":"/captures/opcua_phase3.pcap","filter":"(host plc) and port 4840"}
+{"t":"2025-08-17T11:39:05.187Z","event":"connect_plan","endpoint":"opc.tcp://plc:4840","selectedPolicy":"Basic256Sha256","selectedMode":"SignAndEncrypt","leafSha1":"6E:81:82:BC:56:63:68:19:52:F7:0E:53:B1:6A:3A:03:90:C6:36:BB","user":"user"}
+{"t":"2025-08-17T11:40:37.131Z","event":"pcap_start","file":"/captures/opcua_phase3.pcap","filter":"(host plc) and port 4840"}
+{"t":"2025-08-17T11:40:37.131Z","event":"connect_plan","endpoint":"opc.tcp://plc:4840","selectedPolicy":"Basic256Sha256","selectedMode":"SignAndEncrypt","leafSha1":"6E:81:82:BC:56:63:68:19:52:F7:0E:53:B1:6A:3A:03:90:C6:36:BB","user":"user"}
+{"t":"2025-08-17T11:40:49.669Z","event":"pcap_start","file":"/captures/opcua_phase3.pcap","filter":"(host plc) and port 4840"}
+{"t":"2025-08-17T11:40:49.669Z","event":"connect_plan","endpoint":"opc.tcp://plc:4840","selectedPolicy":"Basic256Sha256","selectedMode":"SignAndEncrypt","leafSha1":"6E:81:82:BC:56:63:68:19:52:F7:0E:53:B1:6A:3A:03:90:C6:36:BB","user":"user"}
+{"t":"2025-08-17T11:41:12.640Z","event":"pcap_start","file":"/captures/opcua_phase3.pcap","filter":"(host plc) and port 4840"}
+{"t":"2025-08-17T11:41:12.641Z","event":"connect_plan","endpoint":"opc.tcp://plc:4840","selectedPolicy":"Basic256Sha256","selectedMode":"SignAndEncrypt","leafSha1":"6E:81:82:BC:56:63:68:19:52:F7:0E:53:B1:6A:3A:03:90:C6:36:BB","user":"user"}
+{"t":"2025-08-17T11:46:42.708Z","event":"pcap_start","file":"/captures/opcua_phase3.pcap","filter":"(host industrial-process) and port 4840"}
+{"t":"2025-08-17T11:46:42.708Z","event":"connect_plan","endpoint":"opc.tcp://industrial-process:4840/freeopcua/server/","selectedPolicy":"Basic256Sha256","selectedMode":"SignAndEncrypt","leafSha1":"0A:68:B3:CC:9C:77:E3:29:4D:9E:5D:1D:5E:B7:CF:FD:8D:96:69:3C","user":"anonymous"}
+{"t":"2025-08-17T11:47:44.322Z","event":"pcap_start","file":"/captures/opcua_phase3.pcap","filter":"(host industrial-process) and port 4840"}
+{"t":"2025-08-17T11:47:44.323Z","event":"connect_plan","endpoint":"opc.tcp://industrial-process:4840/freeopcua/server/","selectedPolicy":"Basic256Sha256","selectedMode":"SignAndEncrypt","leafSha1":"0A:68:B3:CC:9C:77:E3:29:4D:9E:5D:1D:5E:B7:CF:FD:8D:96:69:3C","user":"anonymous"}

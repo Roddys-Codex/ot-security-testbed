@@ -1,0 +1,5 @@
+{"endpointUrl":"opc.tcp://plc:4840","securityPolicy":"http://opcfoundation.org/UA/SecurityPolicy#None","securityMode":"1","userTokens":[0,2,1]}
+{"endpointUrl":"opc.tcp://plc:4840","securityPolicy":"http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256","securityMode":"2","userTokens":[0,2,1]}
+{"endpointUrl":"opc.tcp://plc:4840","securityPolicy":"http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256","securityMode":"3","userTokens":[0,2,1]}
+{"endpointUrl":"opc.tcp://plc:4840","securityPolicy":"http://opcfoundation.org/UA/SecurityPolicy#Aes128_Sha256_RsaOaep","securityMode":"2","userTokens":[0,2,1]}
+{"endpointUrl":"opc.tcp://plc:4840","securityPolicy":"http://opcfoundation.org/UA/SecurityPolicy#Aes128_Sha256_RsaOaep","securityMode":"3","userTokens":[0,2,1]}

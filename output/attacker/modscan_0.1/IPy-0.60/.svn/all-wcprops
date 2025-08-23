@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/4/trunk/IPy-0.60
+END
+rest.css
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/4/trunk/IPy-0.60/rest.css
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/4/trunk/IPy-0.60/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/4/trunk/IPy-0.60/ChangeLog
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/4/trunk/IPy-0.60/setup.py
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/4/trunk/IPy-0.60/COPYING
+END
+IPy.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/4/trunk/IPy-0.60/IPy.py
+END
+PKG-INFO
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/4/trunk/IPy-0.60/PKG-INFO
+END
+IPy.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/4/trunk/IPy-0.60/IPy.pyc
+END
+test_doc.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/4/trunk/IPy-0.60/test_doc.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/4/trunk/IPy-0.60/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/4/trunk/IPy-0.60/README
+END
+setup.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/4/trunk/IPy-0.60/setup.cfg
+END

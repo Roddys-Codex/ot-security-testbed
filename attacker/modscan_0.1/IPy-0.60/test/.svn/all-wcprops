@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/4/trunk/IPy-0.60/test
+END
+test.rst
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/4/trunk/IPy-0.60/test/test.rst
+END
+test_IPy.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/4/trunk/IPy-0.60/test/test_IPy.py
+END

@@ -1,0 +1,24 @@
+[submodule "submodules/python-netfilterqueue"]
+	path = submodules/python-netfilterqueue
+	url = https://github.com/oremanj/python-netfilterqueue.git
+[submodule "submodules/BusPwn"]
+	path = submodules/BusPwn
+	url = https://github.com/aravind0x7/BusPwn.git
+[submodule "submodules/ModBusSploit"]
+	path = submodules/ModBusSploit
+	url = https://github.com/C4l1b4n/ModBusSploit.git
+[submodule "submodules/modbus-cli"]
+	path = submodules/modbus-cli
+	url = https://github.com/favalex/modbus-cli.git
+[submodule "submodules/opcua-scan"]
+	path = submodules/opcua-scan
+	url = https://github.com/wavestone-cdt/opcua-scan.git
+[submodule "submodules/MATRIX"]
+	path = submodules/MATRIX
+	url = https://github.com/dekdokdang/MATRIX.git
+[submodule "submodules/opcua-exploit-framework"]
+	path = submodules/opcua-exploit-framework
+	url = https://github.com/claroty/opcua-exploit-framework.git
+[submodule "submodules/mbtget"]
+	path = submodules/mbtget
+	url = https://github.com/sourceperl/mbtget.git
